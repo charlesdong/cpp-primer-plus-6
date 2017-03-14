@@ -25,9 +25,28 @@ int main()
 	cin >> b.width;
 	cout << "Enter box length: ";
 	cin >> b.length;
-	cout << "Enter box volume: ";
-	cin >> b.volume;
+	b.volume = b.length * b.width * b.height;
 	showv(b);
 	showp(&b);
 	return 0;
+}
+
+void showv(box b)
+{
+	cout << "Showing box information by data passed by value:\n";
+	cout << "Maker: " << b.maker << endl
+		<< "Height: " << b.height << endl
+		<< "Width: " << b.width << endl
+		<< "Length: " << b.length << endl
+		<< "Volume: " << b.volume << endl;
+}
+
+void showp(box * pb)
+{
+	cout << "Showing box information by data passed by pointer:\n";
+	cout << "Maker: " << pb->maker << endl
+		<< "Height: " << pb->height << endl
+		<< "Width: " << pb->width << endl
+		<< "Length: " << pb->length << endl
+		<< "Volume: " << pb->volume << endl;
 }
