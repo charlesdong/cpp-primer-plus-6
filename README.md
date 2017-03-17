@@ -12,10 +12,6 @@ Also part of the solutions are incomplete. About the list of incomplete solution
 
 Here's a list of incomplete solutions:
 
-6-2
-
-6-3
-
 8-7
 
 Chapter 9
